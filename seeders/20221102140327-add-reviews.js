@@ -8,7 +8,7 @@ module.exports = {
       text: 'Bootcamps for PHP learning',
       rating: 4,
       bootcamp_id: 4,
-      user_id: 1
+      user_id: 4
      },
 
      {
@@ -16,7 +16,7 @@ module.exports = {
       text: 'Bootcamps for CSS learning',
       rating: 8,
       bootcamp_id: 5,
-      user_id: 2
+      user_id: 5
      },
 
      {
@@ -24,7 +24,7 @@ module.exports = {
       text: 'Bootcamps for JAVA learning',
       rating: 6,
       bootcamp_id: 6,
-      user_id: 3
+      user_id: 6
      },
 
      {
