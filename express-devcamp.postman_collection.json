@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "bdc73dd9-e638-4dc8-a20c-64d77a0de9ab",
+		"_postman_id": "7d1d9113-7eae-40cd-a416-80dcd8d78b55",
 		"name": "express-devcamp",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -127,7 +127,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps",
+							"raw": "http://localhost:5000/api/v1/courses",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -136,7 +136,7 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps"
+								"courses"
 							]
 						}
 					},
@@ -148,7 +148,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps/1",
+							"raw": "http://localhost:5000/api/v1/courses/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -157,8 +157,8 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps",
-								"1"
+								"courses",
+								"2"
 							]
 						}
 					},
@@ -170,7 +170,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps/1",
+							"raw": "http://localhost:5000/api/v1/courses/8",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -179,8 +179,8 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps",
-								"1"
+								"courses",
+								"8"
 							]
 						}
 					},
@@ -190,9 +190,19 @@
 					"name": "Actualizar course por id",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Java\",\r\n    \"weeks\": 5,\r\n    \"minimum_skill\": \"Basic\"\r\n}"
+						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps/1",
+							"raw": "http://localhost:5000/api/v1/courses/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -201,8 +211,8 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps",
-								"1"
+								"courses",
+								"4"
 							]
 						}
 					},
@@ -212,9 +222,19 @@
 					"name": "Crear course",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"JAVA NUEVO Bootcamp\",\r\n    \"description\": \"Bootcamps for JAVA NUEVO learning\",\r\n    \"weeks\": 5,\r\n    \"enroll_cost\": 10.400,\r\n    \"minimum_skill\": \"Advanced\",\r\n    \"bootcamp_id\": 7\r\n}"
+						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps",
+							"raw": "http://localhost:5000/api/v1/courses",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -223,7 +243,7 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps"
+								"courses"
 							]
 						}
 					},
@@ -240,7 +260,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps",
+							"raw": "http://localhost:5000/api/v1/reviews",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -249,7 +269,7 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps"
+								"reviews"
 							]
 						}
 					},
@@ -261,7 +281,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps/1",
+							"raw": "http://localhost:5000/api/v1/reviews/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -270,7 +290,7 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps",
+								"reviews",
 								"1"
 							]
 						}
@@ -283,7 +303,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps/1",
+							"raw": "http://localhost:5000/api/v1/reviews/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -292,7 +312,7 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps",
+								"reviews",
 								"1"
 							]
 						}
@@ -303,9 +323,19 @@
 					"name": "Actualizar review por id",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Python Bootcamp\",\r\n    \"text\": \"Python for basic students\"\r\n}"
+						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps/1",
+							"raw": "http://localhost:5000/api/v1/reviews/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -314,8 +344,8 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps",
-								"1"
+								"reviews",
+								"4"
 							]
 						}
 					},
@@ -325,9 +355,19 @@
 					"name": "Crear review",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"JAVA NUEVO Bootcamp\",\r\n    \"text\": \"Muy bueno\",\r\n    \"rating\": 8,\r\n    \"bootcamp_id\":  9,\r\n    \"user_id\": 5\r\n}"
+						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/bootcamps",
+							"raw": "http://localhost:5000/api/v1/reviews",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -336,7 +376,7 @@
 							"path": [
 								"api",
 								"v1",
-								"bootcamps"
+								"reviews"
 							]
 						}
 					},
@@ -374,7 +414,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/users/5",
+							"raw": "http://localhost:5000/api/v1/users/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -384,7 +424,7 @@
 								"api",
 								"v1",
 								"users",
-								"5"
+								"3"
 							]
 						}
 					},
@@ -396,7 +436,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/users/1",
+							"raw": "http://localhost:5000/api/v1/users/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -406,7 +446,7 @@
 								"api",
 								"v1",
 								"users",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -425,10 +465,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"Martha\",\r\n    \"email\": \"Martha@misena.edu.co\",\r\n    \"password\": \"123456789\"\r\n}"
+							"raw": "{\r\n    \"username\": \"Erika\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/users/8",
+							"raw": "http://localhost:5000/api/v1/users/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -438,7 +478,7 @@
 								"api",
 								"v1",
 								"users",
-								"8"
+								"4"
 							]
 						}
 					},
@@ -457,7 +497,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"Maria\",\r\n    \"email\": \"Maria32@misena.edu.co\",\r\n    \"password\": \"123456\"\r\n}"
+							"raw": "{\r\n    \"username\": \"Andrea\",\r\n    \"email\": \"Andrea12@misena.edu.co\",\r\n    \"password\": \"123456789\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:5000/api/v1/users",
