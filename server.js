@@ -37,7 +37,7 @@ app.use('/api/v1/reviews', reviewRoutes)
 app.use('/api/v1/users', userRoutes)
 
 
-// Endpointss de dominio
+// Endpoints de dominio
 // Endpoint bootcamp
 // Listar todos los bootcamps
 app.get('/api/v1/bootcamps', (req, res) => {

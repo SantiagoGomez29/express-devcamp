@@ -7,32 +7,32 @@ module.exports = {
       title: 'PHP Bootcamp',
       text: 'Bootcamps for PHP learning',
       rating: 4,
-      bootcamp_id: 4,
-      user_id: 4
+      bootcamp_id: 7,
+      user_id: 1
      },
 
      {
       title: 'CSS Bootcamp',
       text: 'Bootcamps for CSS learning',
       rating: 8,
-      bootcamp_id: 5,
-      user_id: 5
+      bootcamp_id: 8,
+      user_id: 2
      },
 
      {
       title: 'JAVA Bootcamp',
       text: 'Bootcamps for JAVA learning',
       rating: 6,
-      bootcamp_id: 6,
-      user_id: 6
+      bootcamp_id: 8,
+      user_id: 3
      },
 
      {
       title: 'PYTHON Bootcamp',
       text: 'Bootcamps for PYTHON learning',
       rating: 7,
-      bootcamp_id: 4,
-      user_id: 4
+      bootcamp_id: 9,
+      user_id: 2
      }
 
     ], {});

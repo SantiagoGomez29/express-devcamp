@@ -9,7 +9,7 @@ module.exports = {
       weeks: 4,
       enroll_cost: 8500,
       minimum_skill: 'Advanced',
-      bootcamp_id: 4
+      bootcamp_id: 7
      },
 
      {
@@ -18,7 +18,7 @@ module.exports = {
       weeks: 4,
       enroll_cost: 1200,
       minimum_skill: 'Advanced',
-      bootcamp_id: 5
+      bootcamp_id: 8
      },
 
      {
@@ -27,7 +27,7 @@ module.exports = {
       weeks: 4,
       enroll_cost: 3400,
       minimum_skill: 'Advanced',
-      bootcamp_id: 6
+      bootcamp_id: 8
      },
 
      {
@@ -36,7 +36,7 @@ module.exports = {
       weeks: 4,
       enroll_cost: 10500,
       minimum_skill: 'Advanced',
-      bootcamp_id: 4
+      bootcamp_id: 9
      }
 
     ], {});
